@@ -7,6 +7,10 @@
 # Ignore bundler config
 /.bundle
 
+# environment files
+/.powrc
+/.tm_properties
+
 # configuration
 /config/database.yml
 /config/settings.local.yml
