@@ -7,8 +7,11 @@
 # Ignore bundler config
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
+# configuration
+/config/database.yml
+/config/settings.local.yml
+/capatross_logs
+/config/capatross.local.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
