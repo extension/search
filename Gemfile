@@ -5,8 +5,8 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
+# database for Active Record
+gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,21 +18,22 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  # bootstrap 2 (for now)
+  gem 'anjlab-bootstrap-rails', '~> 2.0', :require => 'bootstrap-rails'
 end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# server settings
+gem "rails_config"
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+# things Google
+gem "gdata_19", "~> 1.1.5"
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
+group :development do
+  # require the powder gem
+  gem 'powder'
+  gem 'pry'
+  gem 'quiet_assets'
+  gem 'net-http-spy'
+end
