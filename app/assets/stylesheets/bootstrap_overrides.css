@@ -1,0 +1,15 @@
+body {
+  background: #DDD url(/assets/background_bg.jpg) 0 0 repeat fixed;
+  height:100%;
+  font-size: 16px;
+  line-height:140%;
+}
+
+.container {
+  margin:-5px auto;
+  background: #FFF;
+  padding:5px 26px;
+  box-shadow: 6px 0 4px -4px #666 , -6px 0 4px -4px #666; 
+  -moz-box-shadow: 6px 0 4px -4px #666, -6px 0 4px -4px #666; 
+  -webkit-box-shadow: 6px 0 4px -4px #666, -6px 0 4px -4px #666;
+}

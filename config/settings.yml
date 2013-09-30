@@ -1,0 +1,5 @@
+airbrake_api_key: 'use_local_settings'
+app_location: 'localdev'
+cse_key: '010978498346658208303:rljk-euizvq'
+cse_uid: 'use_local_settings'
+cse_secret: 'use_local_settings'
