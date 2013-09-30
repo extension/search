@@ -20,6 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   # bootstrap 2 (for now)
   gem 'anjlab-bootstrap-rails', '~> 2.0', :require => 'bootstrap-rails'
+  gem 'font-awesome-sass-rails'
 end
 
 gem 'jquery-rails'
@@ -36,4 +37,8 @@ group :development do
   gem 'pry'
   gem 'quiet_assets'
   gem 'net-http-spy'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
 end
