@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://systems.extension.org/rubygems/'
 
 gem 'rails', '3.2.14'
 
@@ -32,6 +33,10 @@ gem "rails_config"
 gem "gdata_19", "~> 1.1.5"
 
 group :development do
+  # deployment
+  gem 'capistrano'
+  gem 'capatross'
+
   # require the powder gem
   gem 'powder'
   gem 'pry'

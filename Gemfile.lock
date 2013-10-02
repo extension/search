@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://systems.extension.org/rubygems/
   specs:
     actionmailer (3.2.14)
       actionpack (= 3.2.14)
@@ -39,6 +40,18 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.0.4)
     callsite (0.0.11)
+    capatross (1.5.2)
+      capistrano (>= 2.11)
+      grit (>= 2.4)
+      mysql2 (~> 0.2)
+      rest-client (>= 1.6.7)
+      thor (>= 0.16.0)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -48,12 +61,18 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     debug_inspector (0.0.2)
+    diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.2)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
     gdata_19 (1.1.5)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    highline (1.6.19)
     hike (1.2.3)
     i18n (0.6.5)
     journey (1.0.4)
@@ -73,7 +92,15 @@ GEM
     multi_json (1.8.0)
     mysql2 (0.3.13)
     net-http-spy (0.2.1)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     polyglot (0.3.3)
+    posix-spawn (0.3.6)
     powder (0.2.0)
       thor (>= 0.11.5)
     pry (0.9.12.2)
@@ -111,6 +138,8 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.11)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -139,6 +168,8 @@ DEPENDENCIES
   anjlab-bootstrap-rails (~> 2.0)
   better_errors
   binding_of_caller
+  capatross
+  capistrano
   coffee-rails (~> 3.2.1)
   font-awesome-sass-rails
   gdata_19 (~> 1.1.5)
