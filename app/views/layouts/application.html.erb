@@ -13,7 +13,7 @@
   <%= render(partial: 'shared/google_tracking') %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
 
 </head>
 <body>  
@@ -21,7 +21,9 @@
   
   
   <% if(Settings.app_location != 'production')%>
-    <div id="app_location" class="<%= Settings.app_location %>"><p>You are viewing the <strong><%= Settings.app_location %></strong> site. <%= link_to("more info", "http://create.extension.org/node/1781") %></p></div>
+    <div id="app_location" class="<%= Settings.app_location %>">
+      <p>You are viewing the <strong><%= Settings.app_location %></strong> site.</p>
+    </div>
   <% end %>
   
 
