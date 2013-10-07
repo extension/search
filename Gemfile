@@ -32,6 +32,9 @@ gem "rails_config"
 # things Google
 gem "gdata_19", "~> 1.1.5"
 
+# exception handling
+gem 'airbrake'
+
 group :development do
   # deployment
   gem 'capistrano'
