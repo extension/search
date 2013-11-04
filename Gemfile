@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 source 'https://systems.extension.org/rubygems/'
 
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.15'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -37,7 +37,7 @@ gem 'airbrake'
 
 group :development do
   # deployment
-  gem 'capistrano'
+  gem 'capistrano', '~> 2.15.5' 
   gem 'capatross'
 
   # require the powder gem
