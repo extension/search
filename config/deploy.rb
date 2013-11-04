@@ -1,7 +1,7 @@
 set :stages, %w(prod)
 set :default_stage, "prod"
 require 'capistrano/ext/multistage'
-#require 'capatross'
+require 'capatross'
 require "bundler/capistrano"
 require './config/boot'
 require "airbrake/capistrano"
