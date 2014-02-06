@@ -22,16 +22,13 @@ set :bundle_flags, '--deployment --binstubs'
 before "deploy", "deploy:checks:git_push"
 if(TRUE_VALUES.include?(ENV['MIGRATE']))
   before "deploy", "deploy:web:disable"
-  before "deploy", "sidekiq:stop"
   after "deploy:update_code", "deploy:update_maint_msg"
   after "deploy:update_code", "deploy:link_and_copy_configs"
   after "deploy:update_code", "deploy:cleanup"
   after "deploy:update_code", "deploy:migrate"
-  after "deploy", "sidekiq:start"
   after "deploy", "deploy:web:enable"
 else
   before "deploy", "deploy:checks:git_migrations"
-  before "deploy", "sidekiq:stop"
   after "deploy:update_code", "deploy:update_maint_msg"
   after "deploy:update_code", "deploy:link_and_copy_configs"
   after "deploy:update_code", "deploy:cleanup"
