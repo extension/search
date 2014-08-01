@@ -1,3 +1,4 @@
 set :deploy_to, "/services/search/"
 set :branch, 'master'
-server 'search.extension.org', :app, :web, :db, :primary => true
+set :vhost, 'search.extension.org'
+server vhost, :app, :web, :db, :primary => true
