@@ -29,9 +29,6 @@ GEM
     activesupport (3.2.18)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
-    airbrake (3.1.16)
-      builder
-      multi_json
     anjlab-bootstrap-rails (2.3.1.2)
       railties (>= 3.0)
       sass (>= 3.2)
@@ -76,6 +73,8 @@ GEM
       posix-spawn (~> 0.3.6)
     highline (1.6.21)
     hike (1.2.3)
+    honeybadger (1.16.5)
+      json
     i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (3.1.0)
@@ -167,7 +166,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake
   anjlab-bootstrap-rails (~> 2.0)
   better_errors
   binding_of_caller
@@ -176,6 +174,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   font-awesome-sass-rails
   gdata_19 (~> 1.1.5)
+  honeybadger
   jquery-rails
   meta_request
   mysql2

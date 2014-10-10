@@ -33,7 +33,7 @@ gem "rails_config"
 gem "gdata_19", "~> 1.1.5"
 
 # exception handling
-gem 'airbrake'
+gem 'honeybadger'
 
 group :development do
   # deployment
