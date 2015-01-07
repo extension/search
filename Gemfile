@@ -35,6 +35,9 @@ gem "gdata_19", "~> 1.1.5"
 # exception handling
 gem 'honeybadger'
 
+# terse logging
+gem 'lograge'
+
 group :development do
   # deployment
   gem 'capistrano', '~> 2.15.5'
