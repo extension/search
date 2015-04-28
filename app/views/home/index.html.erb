@@ -28,7 +28,7 @@
 
     // if we have a query, kick it off
     <% if params[:q] and not params[:q].blank? %>
-      customSearchControl.execute("<%= escape_javascript(params[:q]) %>");
+      customSearchControl.execute("<%= raw escape_javascript(params[:q]) %>");
     <% end %>
 
     // set the callback so we can update the search link
@@ -42,4 +42,3 @@
   <p>This service allows you to search the resources provided by your <%= link_to("Cooperative Extension Service", "http://en.wikipedia.org/wiki/Cooperative_extension_service") %> using a <%= link_to("Google Custom Search Engine", "http://www.google.com/cse/") %> that includes many of the Cooperative Extension web sites provided by your Land-Grant institutions.</p>
 
 </div>
-
