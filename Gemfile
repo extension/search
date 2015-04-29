@@ -29,9 +29,6 @@ gem 'jquery-rails'
 # server settings
 gem "rails_config"
 
-# things Google
-gem "gdata_19", "~> 1.1.5"
-
 # exception handling
 gem 'honeybadger'
 
