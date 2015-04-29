@@ -13,4 +13,13 @@ class ApplicationController < ActionController::Base
     payload[:ip] = request.remote_ip
   end
 
+
+  def clean_query
+    if(!params[:q].blank?)
+      ActionController::Base.helpers.strip_tags(params[:q])
+    else
+      nil
+    end
+  end
+
 end

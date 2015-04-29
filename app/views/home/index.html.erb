@@ -27,8 +27,8 @@
     }
 
     // if we have a query, kick it off
-    <% if params[:q] and not params[:q].blank? %>
-      customSearchControl.execute("<%= raw escape_javascript(params[:q]) %>");
+    <% if !@query_string.blank? %>
+      customSearchControl.execute("<%= raw(escape_javascript(@query_string)) %>");
     <% end %>
 
     // set the callback so we can update the search link

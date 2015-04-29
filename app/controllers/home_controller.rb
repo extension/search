@@ -7,5 +7,6 @@
 
 class HomeController < ApplicationController
   def index
+    @query_string = clean_query
   end
 end
