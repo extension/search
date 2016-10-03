@@ -1,5 +1,5 @@
-set :stages, %w(prod dev)
-set :default_stage, "dev"
+set :stages, %w(prod)
+set :default_stage, "prod"
 require 'capistrano/ext/multistage'
 require 'capatross'
 require "bundler/capistrano"
@@ -15,7 +15,6 @@ set :user, "pacecar"
 set :use_sudo, false
 set :keep_releases, 5
 ssh_options[:forward_agent] = true
-set :port, 24
 set :bundle_flags, '--deployment --binstubs'
 
 before "deploy", "deploy:checks:git_push"

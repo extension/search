@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.22.2'
+gem 'rails', '3.2.22.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -33,6 +33,10 @@ gem 'honeybadger'
 
 # terse logging
 gem 'lograge'
+
+# Ruby 2.2 requirement
+gem 'test-unit'
+
 
 group :development do
   # deployment
