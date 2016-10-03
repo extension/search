@@ -15,6 +15,7 @@
 /config/settings.local.yml
 /capatross_logs
 /config/capatross.local.yml
+/config/honeybadger.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
