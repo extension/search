@@ -6,11 +6,6 @@
 
 <div id="cse"></div>
 <script type="text/javascript">
-
-  function updateLocation(q) {
-    window.location.search = "q=" + encodeURIComponent(q);
-  }
-
   var localCallback = function() {
     if (document.readyState == 'complete') {
       // Document is ready when CSE element is initialized.
@@ -50,7 +45,6 @@
     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
-
   })();
 
 
